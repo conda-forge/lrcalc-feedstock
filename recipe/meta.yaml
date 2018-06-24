@@ -20,8 +20,9 @@ build:
 
 requirements:
   build:
-    - toolchain
     - libtool
+    - {{ compiler('c') }}
+  host:
 
 test:
   commands:
