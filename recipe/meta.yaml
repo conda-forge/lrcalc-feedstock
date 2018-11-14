@@ -15,13 +15,14 @@ source:
     - includes.patch
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [win]
 
 requirements:
   build:
     - libtool
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
 
 test:
