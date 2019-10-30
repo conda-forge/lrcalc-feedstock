@@ -23,6 +23,7 @@ requirements:
     - libtool
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make
   host:
 
 test:
