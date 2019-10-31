@@ -23,6 +23,10 @@ requirements:
     - libtool
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make
+    - autoconf
+    - automake
+    - m4
   host:
 
 test:

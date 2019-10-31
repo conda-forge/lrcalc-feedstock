@@ -1,13 +1,11 @@
 #!/bin/bash
 
-export CPPFLAGS="-I$PREFIX/include $CPPFLAGS"
-export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
-export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-g -O2 $CFLAGS"
 
+autoreconf -fi
 chmod +x configure
-./configure --prefix="$PREFIX"
+./configure --prefix="$PREFIX" --host=$HOST
 
-make
+make -j${CPU_COUNT}
 make check
 make install
