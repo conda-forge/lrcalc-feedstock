@@ -2,8 +2,9 @@
 
 export CFLAGS="-g -O2 $CFLAGS"
 
+autoreconf -i
 chmod +x configure
-./configure --prefix="$PREFIX" --host=$HOST
+./configure --prefix="$PREFIX"
 
 make -j${CPU_COUNT}
 make check
