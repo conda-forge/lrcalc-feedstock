@@ -9,10 +9,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://www.math.rutgers.edu/~asbuch/lrcalc/{{ name }}-{{ version }}.tar.gz
   sha256: 67c5131102b807b1e537da09705a9615cca56b6accae5d5f08afdf1299c72778
-  patches:
-    # https://bitbucket.org/asbuch/lrcalc/commits/226981a060a209efb5e0c3925b71b341b9ff63a4
-    # Patch by Jeroen Demeyer to change include <vector.h> to "vector.h", plus similar cases.
-    - includes.patch
 
 build:
   number: 0
@@ -38,7 +34,7 @@ test:
 
 about:
   home: http://www.math.rutgers.edu/~asbuch/lrcalc/
-  license: GPLv2+
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: The Littlewood-Richardson Calculator is a program designed to compute Littlewood-Richardson coefficients
   dev_url: https://bitbucket.org/asbuch/lrcalc
