@@ -5,7 +5,7 @@ Home: http://www.math.rutgers.edu/~asbuch/lrcalc/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lrcalc-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lrcalc-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Littlewood-Richardson Calculator is a program designed to compute Littlewood-Richardson coefficients
 
@@ -22,8 +22,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=main">
           </a>
         </summary>
         <table>
@@ -31,36 +31,36 @@ Current build status
           <tbody><tr>
               <td>linux_64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=main&jobName=linux&configuration=linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=main&jobName=osx&configuration=osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=599&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lrcalc-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -77,6 +77,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-lrcalc-green.svg)](https://anaconda.org/conda-forge/lrcalc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lrcalc.svg)](https://anaconda.org/conda-forge/lrcalc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lrcalc.svg)](https://anaconda.org/conda-forge/lrcalc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lrcalc.svg)](https://anaconda.org/conda-forge/lrcalc) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--lrcalc-green.svg)](https://anaconda.org/conda-forge/python-lrcalc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-lrcalc.svg)](https://anaconda.org/conda-forge/python-lrcalc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-lrcalc.svg)](https://anaconda.org/conda-forge/python-lrcalc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-lrcalc.svg)](https://anaconda.org/conda-forge/python-lrcalc) |
 
 Installing lrcalc
 =================
@@ -88,10 +89,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `lrcalc` can be installed with:
+Once the `conda-forge` channel has been enabled, `lrcalc, python-lrcalc` can be installed with:
 
 ```
-conda install lrcalc
+conda install lrcalc python-lrcalc
 ```
 
 It is possible to list all of the versions of `lrcalc` available on your platform with:

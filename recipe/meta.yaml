@@ -11,7 +11,7 @@ source:
   sha256: 996ac00e6ea8321ef09b34478f5379f613933c3254aeba624b6419b8afa5df57
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
     - automake
     - m4
   host:
+  run:
 
 test:
   commands:
@@ -31,6 +32,30 @@ test:
     - test ! -f ${PREFIX}/lib/liblrcalc.a
     - test -f ${PREFIX}/lib/liblrcalc.dylib  # [osx]
     - test -f ${PREFIX}/lib/liblrcalc.so     # [linux]
+
+outputs:
+  - name: lrcalc
+
+  - name: python-lrcalc
+    script: build-python.sh
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+        - python                               # [build_platform != target_platform]
+        - cython                               # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}   # [build_platform != target_platform]
+      host:
+        - python
+        - cython
+        - pip
+        - {{ pin_subpackage("lrcalc", exact=True) }}
+      run:
+        - python
+        - {{ pin_subpackage("lrcalc", exact=True) }}
+    test:
+      imports:
+        - lrcalc
 
 about:
   home: http://www.math.rutgers.edu/~asbuch/lrcalc/
