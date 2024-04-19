@@ -57,6 +57,7 @@ outputs:
         - {{ pin_subpackage("lrcalc", exact=True) }}
       run:
         - python
+        - {{ pin_subpackage("lrcalc", exact=True) }}
     test:
       imports:
         - lrcalc
