@@ -16,6 +16,10 @@ source:
 build:
   number: 6
   skip: true  # [win]
+  run_exports:
+    # There have been no release of lrcalc for some years. To be on the safe
+    # side we are strict with the pinning.
+    - {{ pin_subpackage("lrcalc", max_pin="x.x") }}
 
 requirements:
   build:
@@ -26,8 +30,6 @@ requirements:
     - autoconf
     - automake
     - m4
-  host:
-  run:
 
 test:
   commands:
@@ -55,7 +57,6 @@ outputs:
         - {{ pin_subpackage("lrcalc", exact=True) }}
       run:
         - python
-        - {{ pin_subpackage("lrcalc", exact=True) }}
     test:
       imports:
         - lrcalc
@@ -70,3 +71,4 @@ about:
 extra:
   recipe-maintainers:
     - isuruf
+    - saraedum
