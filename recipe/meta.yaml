@@ -14,7 +14,7 @@ source:
     folder: pypi
 
 build:
-  number: 6
+  number: 7
   skip: true  # [win]
   run_exports:
     # There have been no release of lrcalc for some years. To be on the safe
@@ -25,6 +25,7 @@ requirements:
   build:
     - libtool
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - make
     - autoconf
@@ -46,6 +47,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('c') }}
+        - {{ stdlib("c") }}
         - {{ compiler('cxx') }}
         - python                               # [build_platform != target_platform]
         - cython                               # [build_platform != target_platform]
