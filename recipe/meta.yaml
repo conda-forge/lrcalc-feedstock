@@ -3,7 +3,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   - url: http://www.math.rutgers.edu/~asbuch/lrcalc/{{ name }}-{{ version }}.tar.gz
