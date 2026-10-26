@@ -74,5 +74,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/sage
     - isuruf
     - saraedum
+    - vincentmacri
